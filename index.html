@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Group Seventeen</title>
+
+<style>
+  /* --- ANIMASI FADE IN HALAMAN --- */
+  body {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: url('https://img.freepik.com/premium-photo/digital-circuit-line-blue-night-city-background_662214-366734.jpg') 
+                no-repeat center/cover fixed;
+    color: white;
+    text-align: center;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  /* --- ANIMASI FADE UP UNTUK TOMBOL --- */
+  .btn {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeUp 0.7s ease forwards;
+  }
+
+  .btn:nth-child(1) { animation-delay: .2s; }
+  .btn:nth-child(2) { animation-delay: .35s; }
+  .btn:nth-child(3) { animation-delay: .5s; }
+  .btn:nth-child(4) { animation-delay: .65s; }
+  .btn:nth-child(5) { animation-delay: .8s; }
+  .btn:nth-child(6) { animation-delay: .95s; }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .container {
+    padding: 60px 20px;
+    backdrop-filter: blur(2px);
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .menu {
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .btn {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Welcome to the Group Seventeen website</h1>
+  <h2>4C's on The Stage 2025/2026 - SMP Khadijah</h2>
+
+  <div class="menu">
+
+    <div class="btn" onclick="location.href='who.html'">Who Are They?</div>
+
+    <!-- Hidden anchors -->
+    <a href="https://drive.google.com/drive/folders/1cwLyG9qG3VeKS_bx7juCEwkwNw6Xztee" target="_blank" id="pd" style="display:none;"></a>
+    <a href="https://drive.google.com/drive/folders/1lT08lZVDNWXcYYoRZ76iImEzi25HQe_2" target="_blank" id="wf" style="display:none;"></a>
+    <a href="https://drive.google.com/file/d/1mzX9i1WJLD0NiJexdf7BBpOJsmbqxjQr/view?usp=drivesdk" target="_blank" id="xb" style="display:none;"></a>
+    <a href="https://drive.google.com/file/d/15wqouGOUQ73td3bc-OWcBVyZO_Nc5eZb/view?usp=drivesdk" target="_blank" id="pp" style="display:none;"></a>
+    <a href="https://youtu.be/p-o27OCauoM?feature=shared" target="_blank" id="vd" style="display:none;"></a>
+
+    <!-- Buttons -->
+    <div class="btn" onclick="document.getElementById('pd').click()">Photo Dump</div>
+    <div class="btn" onclick="document.getElementById('wf').click()">Workflow</div>
+    <div class="btn" onclick="document.getElementById('xb').click()">X Banner</div>
+    <div class="btn" onclick="document.getElementById('pp').click()">Paper</div>
+    <div class="btn" onclick="document.getElementById('vd').click()">Video</div>
+
+  </div>
+</div>
+</body>
+</html>
